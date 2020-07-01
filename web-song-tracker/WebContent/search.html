@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search Page</title>
+</head>
+
+<body
+	style="background: url('https://www.uscreen.tv/wp-content/uploads/2018/06/best-places-to-find-free-music-768x445.jpg'); background-repeat: no-repeat; background-size: 100%;">
+
+	<!-- Logout button -->
+	<div align="right">
+	
+	<script type="text/javascript">
+	function showAlert() {
+		window.location.href = "http://localhost:8080/web-song-tracker/logout.jsp";
+	}
+	</script>
+	
+	<button onclick="showAlert()">Logout</button>
+	
+	</div>
+	
+	<!-- Ganna Song Search -->
+	<br>
+	<h1 align="center" style="color: white">Search on Ganna</h1>
+	<br>
+
+	<div align="center">
+		<form action="SongSearch" method="post">
+			<input type="hidden" name="engine" value="Ganna"/>
+			<input type="text" name="song" placeholder="Enter the song" required>
+			<input type="submit" value="Search">
+		</form>
+		<br>
+		<form action="History" method="post">
+			<input type="hidden" name="engine" value="Ganna" /> 
+			<button type="submit" name="history" value="history">History</button>
+			<button type="submit" name="history" value="delete">Clear History</button>
+		</form>
+	</div>
+	
+	<br>	
+	<br>
+	<hr>
+	<br>
+	
+	<!-- Youtube Song Search -->
+	<br>
+	<h1 align="center" style="color: white">Search on Youtube</h1>
+	<br>
+	<div align="center">
+		<form action="SongSearch" method="post">
+			<input type="hidden" name="engine" value="Youtube"/>
+			<input type="text" name="song" placeholder="Enter the song" required>
+			<input type="submit" value="Search">
+		</form>
+		<br>
+		<form action="History" method="post">
+			<input type="hidden" name="engine" value="Youtube" /> 
+			<button type="submit" name="history" value="history">History</button>
+			<button type="submit" name="history" value="delete">Clear History</button>
+		</form>
+	</div>
+	
+	<br>
+	<br>	
+	<hr>
+	<br>
+	
+	<!-- Google Song Search -->
+	<br>
+	<h1 align="center" style="color: white">Search on Google</h1>
+	<br>
+	<div align="center">
+		<form action="SongSearch" method="post">
+			<input type="hidden" name="engine" value="Google"/>
+			<input type="text" name="song" placeholder="Enter the song" required>
+			<input type="submit" value="Search">
+		</form>
+		<br>
+		<form action="History" method="post">
+			<input type="hidden" name="engine" value="Google" /> 
+			<button type="submit" name="history" value="history">History</button>
+			<button type="submit" name="history" value="delete">Clear History</button>
+		</form>
+	</div>
+	
+	<br>
+	<br>
+	
+</body>
+</html>
